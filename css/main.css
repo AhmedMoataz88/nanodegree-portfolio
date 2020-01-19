@@ -1,0 +1,163 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Montserrat&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Bad Script', cursive;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fbfbfb;
+  font-family: 'Montserrat' ,sans-serif;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+/* --- Header Style ---*/
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/header/cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
+  overflow: hidden;
+}
+
+header .social{
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+  opacity: 0.7;
+}
+
+header .social img {
+  margin-right: 20px;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+}
+
+.header-content .logo {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.header-content h1, .header-content h3 {
+  font-family: 'Bad Script', cursive;
+  font-size: 3em;
+}
+
+.header-content h3{
+  opacity: 0.8;
+  font-size: 1.2em;
+}
+
+/* --- About Section Style --- */
+#about{
+  margin-top: 10vh;
+  text-align: center;
+}
+
+#about h2 {
+  margin:3vh;
+  font-family: 'Bad Script' ,cursive;
+  font-size: 2em;
+}
+
+.about-content{
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-content img{
+  max-width: 100%;
+  width: 300px;
+}
+
+.about-content p {
+  text-align: left;
+  margin-left: 5vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Featured Work Section ---*/
+#featured-work {
+  margin: 10vh auto 0 auto;
+  text-align: center;
+  width: 85vw;
+  overflow: hidden;
+}
+
+#featured-work h2{
+  margin: 3vh;
+  font-family: 'Bad Script', cursive;
+  font-size: 2em;
+}
+
+.featured-work-content{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "first second thirda"
+                        "first second thirdb"
+                        "first second thirdc";
+  grid-gap: 30px;
+}
+
+.featured-work-content img{
+  max-width: 100%;
+}
+
+.project1{
+  grid-area: first;
+}
+
+.project2{
+  grid-area: second;
+}
+
+.project3{
+  grid-area: thirda;
+}
+
+.project4{
+  grid-area: thirdb;
+}
+
+.project5{
+  grid-area: thirdc;
+}
+/* --- Footer Style --- */
+footer{
+  height: 40px;
+  margin: 5vh 0 0 0;
+  background-color: #0a0a0a;
+  text-align: center;
+  overflow: hidden;
+}
+
+footer span {
+  color: #fbfbfb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  display:inline-block;
+  padding: 10px;
+}

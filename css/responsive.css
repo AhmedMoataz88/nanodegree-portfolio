@@ -1,0 +1,102 @@
+@media only screen and (max-width:780px){
+
+  .header-content{
+    font-size: 1.2em;
+    margin: 35vh auto;
+  }
+
+  .header-content h3 {
+    font-size: 1.4em;
+  }
+
+  #about{
+    margin: 2vh auto;
+  }
+
+  .about-content{
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  .about-content img {
+    object-fit: cover;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    margin: 3vw;
+  }
+
+  #featured-work {
+    margin: 4vh auto;
+  }
+
+  #featured-work h2{
+    font-size: 2em;
+    margin: 2vh auto;
+  }
+
+  .featured-work-content {
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  header{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  header .social {
+    margin: 0 auto;
+    position: relative;
+    right: 0;
+  }
+  header .social img {
+    margin: 0 20px;
+  }
+  .header-content {
+    margin: 25vh auto;
+  }
+
+  .header-content h1{
+    font-size: 1.6em;
+  }
+
+  .header-content h3 {
+    font-size: 1.2em;
+  }
+
+  .about-content{
+    flex-direction: column;
+  }
+
+  .about-content p {
+    margin: 3vh auto;
+    text-align: center;
+  }
+
+  .featured-work-content {
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 39% 39%;
+    grid-template-areas:
+        "first second"
+        "thirda thirda"
+        "thirdb thirdb"
+        "thirdc thirdc";
+    justify-content: center;    
+  }
+
+  .featured-work-content img {
+    object-fit: cover;
+  }
+
+  .project1, .project2 {
+    height: 100%;
+  }
+
+  .project3, .project4, .project5 {
+    width: 100%;
+  }
+}
